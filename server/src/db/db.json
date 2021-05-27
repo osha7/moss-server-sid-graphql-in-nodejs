@@ -4,9 +4,9 @@
         "username": "frontendmaster"
     },
     "pet": [
-        {"id": 123, "name": "Yoshi", "type": "dog"},
-        {"id": 543, "name": "Calamari", "type": "fish"},
-        {"id": 756, "name": "Dog2", "type": "dog"}
+        {"id": "123", "name": "Yoshi", "type": "dog"},
+        {"id": "543", "name": "Calamari", "type": "fish"},
+        {"id": "756", "name": "Dog2", "type": "dog"}
     ]
     
 }

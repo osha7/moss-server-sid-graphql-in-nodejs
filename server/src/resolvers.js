@@ -7,15 +7,20 @@
 
 module.exports = {
     Query: {
+        // pets(_, {input}, ctx) {
+        //     return ctx.models.Pet.findMany()
+        // },
+        // pets(_, {input}, ctx) {
+        //     return ctx.models.Pet.findMany().filter(pet => {
+        //         return pet.type === input.type
+        //     })
+        // },
         pets(_, {input}, ctx) {
-            return ctx.models.Pet.findMany()
+            return ctx.models.Pet.findMany(input)
         },
-        pets(_, {input}, ctx) {
-            return ctx.models.Pet.findMany().filter(pet => {
-                return pet.type === input.type
-            })
-        },
-        
+        pet(_, {input}, ctx) {
+            return ctx.models.Pet.findOne(input)
+        }
     },
     // Query: {
     //     demo(_, __, {models}) { // _ -> top level resolver (root level resolver), nothing before it /// 2nd arg -> 'arguments' where clients send variables with queries, next arg is contect object
