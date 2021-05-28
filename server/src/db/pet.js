@@ -11,6 +11,15 @@ const createPetModel = (db) => {
         findOne(filter) {
             return db.get('pet')
             
+        },
+
+        create(pet) {
+            const newPet = {id: nanoid(), createdAt: Date.now(), ...pet}
+            db.get('pet')
+            .push(newPet)
+            .write()
+
+            return newPet
         }
     };
 };

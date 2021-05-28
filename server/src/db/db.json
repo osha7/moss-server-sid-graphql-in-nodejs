@@ -1,13 +1,29 @@
 {
-    "user": {
-        "id": "jbWMVGjm5016GwepDoty",
-        "username": "frontendmaster"
+  "user": {
+    "id": "jbWMVGjm5016GwepDoty",
+    "username": "frontendmaster"
+  },
+  "pet": [
+    {
+      "id": "123",
+      "name": "Yoshi",
+      "type": "dog"
     },
-    "pet": [
-        {"id": "123", "name": "Yoshi", "type": "dog"},
-        {"id": "543", "name": "Calamari", "type": "fish"},
-        {"id": "756", "name": "Dog2", "type": "dog"}
-    ]
-    
+    {
+      "id": "543",
+      "name": "Calamari",
+      "type": "fish"
+    },
+    {
+      "id": "756",
+      "name": "Dog2",
+      "type": "dog"
+    },
+    {
+      "id": "9E5yAtbLTaE83deaBikSg",
+      "createdAt": 1622162615535,
+      "name": "Mooney",
+      "type": "cat"
+    }
+  ]
 }
-

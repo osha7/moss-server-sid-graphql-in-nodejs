@@ -10,7 +10,7 @@ const typeDefs = gql`
 
     type Pet {
         id: ID!
-        createdAt: String
+        createdAt: String!
         name: String!
         type: String!
         img: String
@@ -22,9 +22,19 @@ const typeDefs = gql`
         type: String
     }
 
+    input NewPetInput {
+        name: String!
+        type: String!
+        img: String
+    }
+
     type Query {
         pets(input: PetInput): [Pet]!
         pet(input: PetInput): Pet
+    }
+
+    type Mutation {
+        newPet(input: NewPetInput!): Pet!
     }
 `;
 
@@ -40,3 +50,6 @@ module.exports = typeDefs
 // type Query {
 //     pets(type: String!): [Pet]! // ! -> you have to pass a type
 // }
+//
+
+// query is the only thing REQUIRED on a schema

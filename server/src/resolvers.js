@@ -27,9 +27,11 @@ module.exports = {
     //         models.Pet.findMany({})
     //     }
     // },
-    // Mutation: {
-
-    // },
+    Mutation: {
+        newPet(_, {input}, ctx) {
+            return ctx.models.Pet.create(input)
+        }
+    },
     // Pet: {
     //     img(pet) {
     //         return pet.type === 'DOG'
